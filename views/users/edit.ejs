@@ -1,0 +1,12 @@
+<h1>FORM TO EDIT EXISTING User <%-User.id%></h1>
+
+<form action="/users/<%-User.id%>?_method=PUT" method="post">
+  <input type="text" name="user[name]" value="<%-User.name%>">
+  <input type="text" name="user[password]" value="<%-User.password%>">
+  <input type="tel" name="user[email]" value="<%-User.email%>">
+
+  <button type="submit">UPDATE</button>
+</form>
+<form action="/users/<%-User.id%>?_method=delete" method="post">
+  <button type="submit">DELETE THIS USER</button>
+</form>
