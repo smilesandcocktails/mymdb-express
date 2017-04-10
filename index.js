@@ -25,8 +25,8 @@ app.get('/', function(req,res) {
 })
 
 // require the movies_controller
-var moviesController = require('./controllers/movies_controller')
-app.use(moviesController)
+var usersController = require('./controllers/users_controller')
+app.use(usersController)
 
 app.use(function (req, res) {
   res.send('error found')
